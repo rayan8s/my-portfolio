@@ -1,9 +1,12 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "homepage": "https://your-username.github.io/your-repo-name",
   "scripts": {
     "start": "webpack serve --config webpack.config.js",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",
